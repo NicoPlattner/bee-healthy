@@ -15,11 +15,13 @@ def getAllHives(user_id):
     if request.method == 'POST':
         return 'getAllHives' + user_id
 
-@app.route('/createAndAddHive/<user_id>', methods=['POST'])
-def createAndAddHive(user_id):
+
+@app.route('/createHive/<user_id>', methods=['POST'])
+def createHive(user_id):
     if request.method == 'POST':
-        User.createAndAddHive(user_id, request.args.get('hiveName'), request.args.get('hiveLocationGPSString'),
-                              request.args.get('hiveBeeType'))
+        helperMethods.addHive(user_id, request.args.get('hiveName'), request.args.get('hiveLocationGPSString'),
+                              request.args.get('beeType'))
+        return 'created hive for user ' + user_id
 
 
 # create a new user
