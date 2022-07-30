@@ -1,6 +1,11 @@
+import time
+import itertools
+
 class Hive:
-    def __init__(self, id, name, locationGPSString, beeType):
-        self.id = id
+    id_iter = itertools.count()
+    
+    def __init__(self, name, locationGPSString, beeType):
+        self.id = next(Hive.id_iter)
         self.name = name
         self.locationGPSString = locationGPSString
         self.beeType = beeType
@@ -12,10 +17,11 @@ class Hive:
             'airQuality': [],
             'beeSoundVolume': [],
             'weight': [],
+            
             'epochTime': [],
             'solarTime': [],
-            'predictedHealthStatus': [],
-            'weather': []
+            'weather': [],
+            'predictedHealthStatus': []
         }
 
     def addMeasurement(self, measurement):
@@ -25,12 +31,14 @@ class Hive:
         self.sensorData['airQuality'].append(measurement['airQuality'])
         self.sensorData['beeSoundVolume'].append(measurement['beeSoundVolume'])
         self.sensorData['weight'].append(measurement['weight'])
-
+        
+        now = round(time.time())
+        
+        
+        self.sensorData['epochTime'].append()
         # TODO lookup and add epochTime
         # TODO lookup and add solarTime
         # TODO lookup and add weather
         # TODO calculate predictedHealthStatus
 
-        # self.sensorData['epochTime'].append(measurement['epochTime'])
-        # self.sensorData['solarTime'].append(measurement['solarTime'])
-        # self.sensorData['weather'].append(measurement['weather'])
+
