@@ -20,7 +20,7 @@ def serialize(obj, name):
 
     with open(os.path.join(ROOT_DIR, f'data/{name}.json'), 'w') as f:
         json.dump(dict, default=lambda o: o.__dict__,
-                   sort_keys=True, indent=4, fp=f)
+                  sort_keys=True, indent=4, fp=f)
 
 
 def addHive(hive):
@@ -51,3 +51,12 @@ def addHive(userid, hiveName, hiveLocationGPSString, hiveBeeType):
     hives = deserialize('hives')['hives']
     hives.append(newHive)
     serialize(hives, 'hives')
+
+
+def getHives(user_id):
+    users = deserialize('users')['users']
+    for user in users:
+        if user['userID'] == int(user_id):
+            return json.dumps(user['hives'], default=lambda o: o.__dict__,
+                              sort_keys=True, indent=4)
+    raise Exception(f'User with id {user_id} not found')

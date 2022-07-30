@@ -10,10 +10,10 @@ def hello_world():  # put application's code here
     return 'Hello World!'
 
 
-@app.route('/getAllHives/<user_id>', methods=['POST'])
+@app.route('/getAllHives/<user_id>', methods=['GET'])
 def getAllHives(user_id):
-    if request.method == 'POST':
-        return 'getAllHives' + user_id
+    if request.method == 'GET':
+        return helperMethods.getHives(user_id)
 
 
 @app.route('/createHive/<user_id>', methods=['POST'])
