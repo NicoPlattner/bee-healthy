@@ -1,0 +1,40 @@
+{
+    "hives": [
+        {
+                    "beeType": "Italian Honey Bee",
+                    "id": 0,
+                    "locationGPSString": "48.22509988257262, 16.376958722725814",
+                    "name": "Augarten Hive",
+                    "sensorData": {
+                        "airQuality": [],
+                        "beeSoundVolume": [],
+                        "epochTime": [],
+                        "humidity": [],
+                        "predictedHealthStatus": [],
+                        "pressure": [],
+                        "solarTime": [],
+                        "temperature": [],
+                        "weather": [],
+                        "weight": []
+                    }
+                },
+        {
+            "beeType": "German Dark Honey Bee ",
+            "id": 0,
+            "locationGPSString": "48.23797507670491, 16.416943790322474",
+            "name": "Dounauparl Hive",
+            "sensorData": {
+                "airQuality": [],
+                "beeSoundVolume": [],
+                "epochTime": [],
+                "humidity": [],
+                "predictedHealthStatus": [],
+                "pressure": [],
+                "solarTime": [],
+                "temperature": [],
+                "weather": [],
+                "weight": []
+            }
+        }
+    ]
+}
