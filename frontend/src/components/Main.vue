@@ -70,6 +70,12 @@ export default {
   mounted() {
     this.temperature = 36;
     this.weather = Weather.LightClouds;
+
+    fetch('http://localhost:5000/getAllHives/0')
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
+
   }
 }
 </script>
