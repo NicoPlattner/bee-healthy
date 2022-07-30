@@ -8,16 +8,16 @@
                     "locationGPSString": "48.22509988257262, 16.376958722725814",
                     "name": "Augarten Hive",
                     "sensorData": {
-                        "airQuality": [],
-                        "beeSoundVolume": [],
-                        "epochTime": [],
-                        "humidity": [],
-                        "predictedHealthStatus": [],
-                        "pressure": [],
-                        "solarTime": [],
-                        "temperature": [],
-                        "weather": [],
-                        "weight": []
+                        "airQuality": [90],
+                        "beeSoundVolume": [80],
+                        "epochTime": [1659223549],
+                        "humidity": [55],
+                        "predictedHealthStatus": [100],
+                        "pressure": [10000],
+                        "solarTime": [90],
+                        "temperature": [28],
+                        "weather": [1],
+                        "weight": [52]
                     }
                 },
                 {
@@ -26,16 +26,16 @@
                     "locationGPSString": "48.23797507670491, 16.416943790322474",
                     "name": "Dounauparl Hive",
                     "sensorData": {
-                        "airQuality": [],
-                        "beeSoundVolume": [],
-                        "epochTime": [],
-                        "humidity": [],
-                        "predictedHealthStatus": [],
-                        "pressure": [],
-                        "solarTime": [],
-                        "temperature": [],
-                        "weather": [],
-                        "weight": []
+                        "airQuality": [92],
+                        "beeSoundVolume": [76],
+                        "epochTime": [1659223549],
+                        "humidity": [54],
+                        "predictedHealthStatus": [99],
+                        "pressure": [10000],
+                        "solarTime": [87],
+                        "temperature": [27],
+                        "weather": [1],
+                        "weight": [56]
                     }
                 }
             ],
