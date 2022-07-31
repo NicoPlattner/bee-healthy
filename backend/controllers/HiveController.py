@@ -1,6 +1,7 @@
 import json
 
 from helperMethods import deserialize, serialize
+from models import Hive
 
 
 def addHiveToUser(user_id, hive):
@@ -13,8 +14,8 @@ def addHiveToUser(user_id, hive):
     raise Exception(f'User with id {user_id} not found')
 
 
-def addHive(userid, hiveName, hiveLocationGPSString, hiveBeeType):
-    newHive = Hive.Hive(hiveName, hiveLocationGPSString, hiveBeeType)
+def addHive(userid, hiveName, hiveLocationGPSString, hiveBeeType, harvestWeight):
+    newHive = Hive.Hive(hiveName, hiveLocationGPSString, hiveBeeType, harvestWeight)
     addHiveToUser(userid, newHive)
     hives = deserialize('hives')['hives']
     hives.append(newHive)

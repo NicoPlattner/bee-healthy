@@ -15,7 +15,8 @@
                         "solarTime": [],
                         "temperature": [],
                         "weather": [],
-                        "weight": []
+                        "weight": [],
+                        "harvestWeight": [60]
                     }
                 },
         {
@@ -33,7 +34,8 @@
                 "solarTime": [],
                 "temperature": [],
                 "weather": [],
-                "weight": []
+                "weight": [],
+                "harvestWeight": [62]
             }
         }
     ]
