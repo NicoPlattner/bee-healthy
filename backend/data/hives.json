@@ -20,7 +20,7 @@
                 },
         {
             "beeType": "German Dark Honey Bee ",
-            "id": 0,
+            "id": 1,
             "locationGPSString": "48.23797507670491, 16.416943790322474",
             "name": "Dounauparl Hive",
             "sensorData": {

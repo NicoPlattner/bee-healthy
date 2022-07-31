@@ -27,6 +27,13 @@ def createHive(user_id):
         return 'created hive for user ' + user_id
 
 
+# get a hive by id
+@app.route('/getHive/<user_id>/<hive_id>', methods=['GET'])
+def getHive(hive_id, user_id):
+    if request.method == 'GET':
+        return helperMethods.getHive(user_id, hive_id)
+
+
 # create a new user
 @app.route('/createUser/<name>', methods=['POST'])
 def createUser(name):
