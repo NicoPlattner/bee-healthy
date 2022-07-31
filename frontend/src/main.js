@@ -7,7 +7,11 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import App from "@/App";
 import {Weather} from "@/enums/weather.enum";
 
+import mitt from 'mitt';
+const emitter = mitt();
+
 const app = createApp(App)
+app.config.globalProperties.emitter = emitter;
 app.use(BootstrapVue3)
 app.use(BootstrapIconsPlugin)
 app.use(Weather)
