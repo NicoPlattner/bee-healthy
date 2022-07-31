@@ -1,5 +1,8 @@
 import time
 import itertools
+from SunTimeGenerator import SunTimeGenerator
+from WeatherDataGenerator import WeatherDataGenerator
+from HealthStatus_Algorithm import HealthStatus_Algorithm
 
 class Hive:
     id_iter = itertools.count()
@@ -32,13 +35,22 @@ class Hive:
         self.sensorData['beeSoundVolume'].append(measurement['beeSoundVolume'])
         self.sensorData['weight'].append(measurement['weight'])
         
+        
+        
         now = round(time.time())
+        self.sensorData['epochTime'].append(now)
         
         
-        self.sensorData['epochTime'].append()
-        # TODO lookup and add epochTime
-        # TODO lookup and add solarTime
-        # TODO lookup and add weather
-        # TODO calculate predictedHealthStatus
-
-
+        solarTime = SunTimeGenerator.get_relative_solarTime_factor(
+            now,
+            self.locationGPSString
+        )
+        self.sensorData['solarTime'].append(solarTime)
+        
+        weatherState = WeatherDataGenerator.get_weather(self.locationGPSString)
+        self.sensorData['weather'].append(weatherState)
+        
+        
+        
+        health = HealthStatus_Algorithm.health_calc_simple(self.sensorData)
+        self.sensorData['predictedHealthStatus'].append(health)
