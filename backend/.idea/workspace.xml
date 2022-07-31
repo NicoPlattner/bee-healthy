@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5bbe26-b96e-40c1-be94-96763d0bff85" name="Changes" comment="added harvest weight to hive hopefully it works">
-      <change afterPath="$PROJECT_DIR$/project-notes/IMG_3732.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-notes/IMG_3733.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-notes/IMG_3734.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8b5bbe26-b96e-40c1-be94-96763d0bff85" name="Changes" comment="added project notes">
+      <change beforePath="$PROJECT_DIR$/project-notes/IMG_3732.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-notes/IMG_3733.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-notes/IMG_3734.JPG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project-notes" />
       <recent name="$PROJECT_DIR$/models" />
     </key>
   </component>
@@ -108,9 +108,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659259004007</updated>
-      <workItem from="1659259008787" duration="2091000" />
+      <workItem from="1659259008787" duration="2752000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added project notes">
+      <created>1659263438737</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659263438737</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +138,8 @@
     <MESSAGE value="MAJOR OOP REFACTOR YAY controllers and stuff exists now" />
     <MESSAGE value="ooops now hive methods are in hive controller" />
     <MESSAGE value="added harvest weight to hive hopefully it works" />
-    <option name="LAST_COMMIT_MESSAGE" value="added harvest weight to hive hopefully it works" />
+    <MESSAGE value="added project notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added project notes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend$User.coverage" NAME="User Coverage Results" MODIFIED="1659226600017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
