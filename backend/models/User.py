@@ -1,7 +1,7 @@
 import itertools
 import helperMethods
 
-import Hive
+import models.Hive
 
 import json
 
